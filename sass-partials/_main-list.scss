@@ -1,0 +1,130 @@
+
+.main-list{
+  width: 100%;
+  
+  box-sizing: border-box;
+
+  .wrapper{
+    .list{
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items : center;
+      align-items: center;
+    
+       .card{
+         position: relative;
+         margin : 20px;
+        
+         img{
+           display: block;
+           position: relative;
+           border-radius: 5px;
+         }
+        
+         .card-content{
+           border-radius: 5px;
+           box-shadow: 0 0 20px rgba(128, 128, 128, 0.274);
+           padding: 10px 20px;
+           background: white;
+           z-index: 10;
+           position: relative;
+           box-sizing: border-box;
+           width: 95%;
+           margin: 0 auto;
+            margin-top: -40px;
+            font-size: .9rem;
+           .info{
+             display:  flex;
+             flex-direction: row;
+             justify-content: space-between;
+             padding: 5px 0;
+             border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+             text-transform: capitalize;
+             color: gray;
+              font-size: .9rem;
+           }
+           .price{
+             font-size: 1.3rem;
+             font-weight: bold;
+             padding: 10px 0;
+           }
+           .features{
+             display: flex;
+             color: rgb(70, 70, 70);
+             font-size: 0.9rem;
+             padding-bottom: 10px;
+             border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+             >div{
+               padding-right:  15px;
+               margin-right: 15px;
+               border-right: 1px solid rgba(128, 128, 128, 0.432);
+               span{
+                 margin-right: 10px;
+               }
+             }
+             >div:last-child{
+               border: none;
+               margin: 0;
+               padding: 0;
+             }
+           }
+           .address{
+             padding: 15px 0 10px;
+             display: flex;
+             justify-content: space-between;
+             .city{
+               font-weight: bold;
+               font-size: 1rem;
+             }
+
+           }
+         }
+       }
+    }
+    
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+  .main-list{
+    .wrapper{
+      padding: 10px;
+      .list{
+        .card{
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .main-list{
+    .wrapper{
+    
+      .list{
+       grid-template-columns: 1fr 1fr;
+        .card{
+          .card-content{
+            .features{
+              >div{
+                span{
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .main-list{
+    .wrapper{
+      padding: 50px;
+    }
+  }
+}

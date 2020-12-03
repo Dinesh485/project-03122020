@@ -1,0 +1,11 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+@import './sass-partials/main-list';
+@import './sass-partials/main-wrapper';

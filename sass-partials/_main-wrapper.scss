@@ -1,0 +1,56 @@
+.main-wrapper{
+  height: 100vh;
+ 
+  .map{
+   height: 50%;
+   transition: height 300ms linear;
+   
+  }
+  .main-list{
+   height: 50%;
+   overflow: scroll; 
+   transition: height 300ms linear;
+  }
+}
+
+
+@media only screen and (max-width: 576px){
+  .scrolled{
+  .map{
+    height: 20%;
+  }
+  .main-list{
+    height: 80%;
+  }
+}
+}
+
+
+@media only screen and (min-width: 768px){
+  .main-wrapper{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    .map{
+     
+      height: 100%;
+    }
+    .main-list{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@media only screen and (min-width: 992px){
+  .main-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    
+  }
+}
+@media only screen and (min-width: 1200px){
+  .main-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+}

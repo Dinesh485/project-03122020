@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.main-list {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-list .wrapper .list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-list .wrapper .list .card {
+  position: relative;
+  margin: 20px;
+}
+
+.main-list .wrapper .list .card img {
+  display: block;
+  position: relative;
+  border-radius: 5px;
+}
+
+.main-list .wrapper .list .card .card-content {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 20px rgba(128, 128, 128, 0.274);
+          box-shadow: 0 0 20px rgba(128, 128, 128, 0.274);
+  padding: 10px 20px;
+  background: white;
+  z-index: 10;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: -40px;
+  font-size: .9rem;
+}
+
+.main-list .wrapper .list .card .card-content .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+  text-transform: capitalize;
+  color: gray;
+  font-size: .9rem;
+}
+
+.main-list .wrapper .list .card .card-content .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.main-list .wrapper .list .card .card-content .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #464646;
+  font-size: 0.9rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+}
+
+.main-list .wrapper .list .card .card-content .features > div {
+  padding-right: 15px;
+  margin-right: 15px;
+  border-right: 1px solid rgba(128, 128, 128, 0.432);
+}
+
+.main-list .wrapper .list .card .card-content .features > div span {
+  margin-right: 10px;
+}
+
+.main-list .wrapper .list .card .card-content .features > div:last-child {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-list .wrapper .list .card .card-content .address {
+  padding: 15px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-list .wrapper .list .card .card-content .address .city {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-list .wrapper {
+    padding: 10px;
+  }
+  .main-list .wrapper .list .card {
+    margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-list .wrapper .list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .main-list .wrapper .list .card .card-content .features > div span {
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-list .wrapper {
+    padding: 50px;
+  }
+}
+
+.main-wrapper {
+  height: 100vh;
+}
+
+.main-wrapper .map {
+  height: 50%;
+  -webkit-transition: height 300ms linear;
+  transition: height 300ms linear;
+}
+
+.main-wrapper .main-list {
+  height: 50%;
+  overflow: scroll;
+  -webkit-transition: height 300ms linear;
+  transition: height 300ms linear;
+}
+
+@media only screen and (max-width: 576px) {
+  .scrolled .map {
+    height: 20%;
+  }
+  .scrolled .main-list {
+    height: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.3fr 1fr;
+        grid-template-columns: 1.3fr 1fr;
+  }
+  .main-wrapper .map {
+    height: 100%;
+  }
+  .main-wrapper .main-list {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1.3fr;
+        grid-template-columns: 1fr 1.3fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */
